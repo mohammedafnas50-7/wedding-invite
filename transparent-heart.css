@@ -1,0 +1,6 @@
+/* Transparent animated heart for the names page. */
+.name-heart{width:82px;height:76px;font-size:68px;color:transparent;-webkit-text-stroke:2px #c89a44;text-stroke:2px #c89a44;text-shadow:0 4px 11px rgba(117,76,18,.24);animation:nameHeartBeatOutline 2.1s ease-in-out infinite}
+.name-heart:after{width:64px;height:64px;border-color:rgba(200,154,68,.58);animation:heartHaloOutline 2.1s ease-out infinite}
+.name-heart:before{content:"";position:absolute;width:45px;height:45px;border:1px solid rgba(246,222,164,.75);border-radius:50%;box-shadow:0 0 14px rgba(225,182,89,.4);animation:heartHaloOutline 2.1s .35s ease-out infinite}
+@keyframes nameHeartBeatOutline{0%,100%{transform:translateY(0) scale(1)}18%{transform:translateY(-4px) scale(1.12)}35%{transform:translateY(-1px) scale(1.02)}54%{transform:translateY(-5px) scale(1.09)}70%{transform:translateY(0) scale(1)}}
+@keyframes heartHaloOutline{0%{transform:scale(.62);opacity:.85}100%{transform:scale(1.55);opacity:0}}

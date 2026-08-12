@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#19120f">
+  <meta name="description" content="Mohammed Anjal Hisam & Fereeha invite you to celebrate their wedding.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Mohammed Anjal Hisam & Fereeha | Wedding Invitation">
+  <meta property="og:description" content="Join us on 18 October 2026 at Shifa Convention Centre, Perinthalmanna.">
+  <meta property="og:image" content="assets/opening-floral.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <title>Mohammed Anjal Hisam & Fereeha | Wedding Invitation</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Allura&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="premium.css">
+  <link rel="stylesheet" href="transparent-heart.css">
+  <link rel="stylesheet" href="countdown-model.css">
+</head>
+<body>
+  <div class="grain"></div>
+  <div class="music-control" id="musicControl" aria-live="polite"><span class="equalizer"><i></i><i></i><i></i></span><span id="musicText">Sound on</span></div>
+  <audio id="music" loop preload="metadata"><source src="assets/wedding-song.mp3" type="audio/mpeg"></audio>
+
+  <section class="cover" id="cover" aria-label="Wedding invitation cover">
+    <div class="cover-photo"></div><div class="cover-wash"></div>
+    <div class="cover-content">
+      <p class="eyebrow">With the grace of Allah</p>
+      <div class="heart-scene" aria-label="Mohammed and Fereeha monogram"><svg class="ribbon-heart" viewBox="0 0 220 190" role="img" aria-label="Interlocking heart with M and F"><defs><linearGradient id="goldRibbon" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#fff6ca"/><stop offset=".22" stop-color="#dca94b"/><stop offset=".5" stop-color="#6d170d"/><stop offset=".76" stop-color="#f5c86d"/><stop offset="1" stop-color="#4b0906"/></linearGradient><filter id="heartShadow" x="-20%" y="-20%" width="140%" height="150%"><feDropShadow dx="0" dy="9" stdDeviation="6" flood-color="#210302" flood-opacity=".72"/></filter></defs><path d="M109 170 31 94C-6 57 16 8 58 13c22 3 38 17 51 35 13-18 29-32 51-35 42-5 64 44 27 81l-78 76Z" fill="none" stroke="url(#goldRibbon)" stroke-width="22" stroke-linejoin="round" filter="url(#heartShadow)"/><path d="M77 20c13 6 23 16 32 28M143 20c-14 6-25 17-34 30" fill="none" stroke="rgba(255,250,211,.6)" stroke-width="3" stroke-linecap="round"/><text x="110" y="104" text-anchor="middle">M<tspan class="amp"> &amp; </tspan>F</text></svg></div>
+      <p class="cover-names">Mohammed Anjal Hisam <em>&amp;</em> Fereeha</p>
+      <p class="cover-line">request the pleasure of your company</p>
+      <button class="open-button" id="openInvite"><span>Tap to open</span><b>✦</b></button>
+    </div>
+  </section>
+
+  <main id="invitation" hidden>
+    <section class="hero section">
+      <div class="ornament top-ornament">✦</div>
+      <div class="only-names reveal" aria-label="Mohammed Anjal Hisam and Fereeha Moorkan"><span>Mohammed<br>Anjal Hisam</span><i class="name-heart" aria-hidden="true">♥</i><span>Fereeha<br>Moorkan</span></div>
+      <div class="scroll-cue" aria-label="Scroll down"><span></span> Scroll to unfold</div>
+    </section>
+
+    <section class="message section">
+      <div class="photo-pair reveal"><div class="photo-frame groom-photo"><img src="assets/groom.jpeg" alt="Mohammed Anjal Hisam"></div><div class="photo-frame bride-photo"><img src="assets/bride.jpeg" alt="Fereeha"></div></div>
+      <div class="message-copy reveal">
+        <p class="arabic-blessing">بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ</p>
+        <p class="family-hosts">Mr. Hifsurahiman &amp; Mrs. Sameera</p>
+        <p class="family-address">Arayankottil House, Kunnappally, Perinthalmanna</p>
+        <p class="family-heading">With the blessings of our beloved families</p>
+        <p class="family-invite">We joyfully invite you to celebrate our wedding day and begin our new journey together.</p>
+        <div class="family-names"><strong id="pageThreeGroom">Mohammed Anjal Hisam</strong><small>Grandson of Sulaiman &amp; Pathummakutty,<br>and P. Abdul Latheef &amp; Pathumma</small><em>&amp;</em><strong id="pageThreeBride">Fereeha Moorkan</strong><small>Daughter of late Mr. Moorkan Abdul Kareem<br>&amp; Mrs. Shareefa P. C.</small><small class="bride-address">Nimminiyil House, Areekode,<br>Malappuram</small></div>
+      </div>
+    </section>
+
+    <section class="scratch-section section">
+      <p class="eyebrow reveal">Save the date</p>
+      <h2 class="reveal">A day to remember</h2>
+      <div class="scratch-card reveal" id="scratchCard">
+        <div class="date-reveal" id="dateReveal"><span>Sunday</span><strong>18</strong><span>October 2026</span><small>11:00 AM — 3:00 PM</small></div>
+        <canvas id="scratchCanvas" aria-label="Scratch this card to reveal the wedding date"></canvas>
+        <div class="scratch-hint" id="scratchHint">Scratch here <b>↗</b></div>
+      </div>
+    </section>
+
+    <section class="countdown-section section">
+      <div class="groom-bg"></div>
+      <div class="dark-wash"></div>
+      <div class="countdown-content reveal"><p class="eyebrow">Counting down to forever</p><div class="countdown" id="countdown" aria-label="Countdown to the wedding"></div></div>
+    </section>
+
+    <section class="venue section">
+      <div class="venue-mark reveal">✦</div>
+      <p class="eyebrow reveal">The celebration</p>
+      <h2 class="reveal" id="venueName">Shifa Convention<br>Centre</h2>
+      <p class="venue-city reveal" id="venueCity">Perinthalmanna</p>
+      <p class="venue-time reveal" id="venueTime">Sunday · 18 October 2026<br>11:00 AM to 3:00 PM</p>
+      <a class="map-button reveal" id="mapLink" href="https://maps.app.goo.gl/usxpvcMszgMfJReK9?g_st=iw" target="_blank" rel="noopener">Find the venue <span>↗</span></a>
+      <p class="final-line reveal">We would be honoured by your presence.</p>
+      <div class="footer-monogram reveal">M <em>&amp;</em> F</div>
+    </section>
+  </main>
+  <div class="petals" id="petals" aria-hidden="true"></div>
+  <script src="config.js"></script><script src="app.js"></script>
+</body>
+</html>
