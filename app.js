@@ -3,7 +3,7 @@
   const $ = (id) => document.getElementById(id);
   $('pageThreeGroom').textContent = w.groom; $('pageThreeBride').textContent = 'Fereeha Moorkan';
   $('venueName').innerHTML = w.venue.replace(' ', '<br>');
-  $('venueCity').textContent = w.city; $('venueTime').innerHTML = `${w.day} Â· ${w.date}<br>${w.time}`; $('mapLink').href = w.mapUrl;
+  $('venueCity').textContent = w.city; $('venueTime').innerHTML = `${w.day} · ${w.date}<br>${w.time}`; $('mapLink').href = w.mapUrl;
   const music = $('music'); music.src = w.music; document.querySelector('.cover-photo').style.backgroundImage = `url("${w.openingArtwork}")`; document.querySelector('.groom-bg').style.backgroundImage = `url("${w.countdownArtwork}")`;
   const open = () => { music.play().catch(()=>{}); $('musicControl').classList.add('visible'); $('invitation').hidden = false; coat(); $('cover').classList.add('open'); setTimeout(()=>$('cover').remove(),1200); };
   $('openInvite').addEventListener('click', open);
