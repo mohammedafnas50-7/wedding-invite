@@ -55,3 +55,9 @@
 .scratch-card .date-reveal strong{font-size:136px}
 .scratch-card .date-reveal span{margin-top:15px;font-size:28px;letter-spacing:.04em}
 
+/* Encoding-safe replacement for the heart and Arabic blessing. */
+.only-names .name-heart{font-size:0}
+.only-names .name-heart:before{content:"\2665";font:60px/1 Georgia,serif}
+.message-copy .arabic-blessing:not(.arabic-fix){display:none}
+.message .arabic-fix{margin:0 0 20px;color:#d19c37;font:24px/1.35 Georgia,serif;text-align:center}
+
